@@ -1,0 +1,23 @@
+#include<stdio.h>
+main()
+{
+ float a, d1, d2, povrsina, obim;
+
+ printf("Unesi duzinu stranice a: ");
+ scanf("%f", &a);
+
+ printf("Unesi duzinu prve dijagonale: ");
+ scanf("%f", &d1);
+
+ printf("Unesi duzinu druge dijagonale: ");
+ scanf("%f", &d2);
+
+ povrsina = d1*d2/2;
+ obim = 4*a;
+
+ printf("Povrsina romba je: %.3fcm2,\na obim je %.3fcm\n ", povrsina, obim);
+ getch();
+
+
+
+}

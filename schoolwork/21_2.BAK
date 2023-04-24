@@ -1,0 +1,17 @@
+#include<stdio.h>
+main()
+{
+ float a,b;
+ printf("Napisi prvi broj:\n");
+ scanf("%f",&a);
+ printf("Napisi drugi broj:\n");
+ scnf("%f",&b);
+ if(a==b)
+ printf("Brojevi su jednaki\n");
+else
+ if(a>b)
+ printf("Veci broj je %f\n",&a);
+ else
+ printf("Veci broj je %f\n",b);
+getch();
+}

@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+main()
+{
+ int n,m,i;
+ float suma;
+ printf("Unesi brojeve\n");
+ scanf("%d%d",&n,&m);
+
+ for(i=n, suma=0; i<=m; i++)
+ {
+  if(i%3!=0)
+   suma+=sqrt(i);
+ }
+ printf("Broj: %f\n", suma);
+ getch();
+}

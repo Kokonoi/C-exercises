@@ -1,0 +1,20 @@
+#include<stdio.h>
+main()
+{
+ long int i,n,zbir;
+  printf("Unesi n\n");
+  scanf("%ld",&n);
+  i=1;
+  zbir=0;
+  while(i<=n)
+{
+ if(i%5==0)
+  continue;
+  zbir=zbir+i;
+  if(zbir>1000)
+  break;
+  i++;
+}
+  printf("Zbir prvih %d brojeva je %d\n",i-1,zbir);
+  getch();
+}

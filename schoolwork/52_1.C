@@ -1,0 +1,17 @@
+#include <stdio.h>
+main()
+{
+ int a[5],b[5]={2,4,6,8,10},i;
+ long int s;
+ printf("Unesi elemente niza a \n");
+ for(i=0;i<5;i++)
+ {
+ scanf("%d",&a[i]);
+ }
+ for(i=0,s=0;i<5;i++)
+ {
+ s+=a[i]*b[i];
+ }
+ printf("s=%ld\n", s);
+ getch();
+}

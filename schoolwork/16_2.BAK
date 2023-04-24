@@ -1,0 +1,19 @@
+#include<stdio.h>
+#define Pi 3.14159
+
+main()
+{
+	double r1,r2,obim,povrsina;
+
+	printf("\nUneti poluprecnik vece kruznice: \n");
+	scanf("%lf", &r1);
+
+	printf("\nUneti poluprecnik manje kruznice: \n");
+	scanf("%lf", &r2);
+
+	povrsina = r1*r1*Pi-r2*r2*Pi;
+	obim = 2*r1*Pi+2*r2*Pi;
+
+	printf("\nPovrsina kruznog prstena je %.3lf,\n a obim %.3lf", povrsina, obim);
+	getch();
+}

@@ -1,0 +1,27 @@
+
+#include <stdio.h>
+#include <math.h>
+
+main()
+{
+ int n, i, k=0;
+ long int suma;
+ printf("Unesi broj do kojeg se sabiraju svi brojevi: \n");
+ scanf("%d", &n);
+
+ for(i=1, suma=0; i<=n; i++)
+ {
+  if(i%3!=0)
+  {
+  suma+=i;
+  k++;
+  }
+ }
+
+ printf("Zbir je %ld, a sabrano je %d brojeva \n", suma, k);
+ getch();
+
+
+
+
+}

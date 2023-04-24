@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<math.h>
+main()
+{
+ int a,b,c;
+ printf("Prvi broj: ");
+ scanf("%d", &a);
+
+ printf("Drugi broj: ");
+ scanf("%d", &b);
+
+ c =
+
+
+
+
+}

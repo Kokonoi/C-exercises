@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int parni(int x, int y);
+
+main()
+{
+ int a,b,par;
+ printf("A=");
+ scanf("%d",&a);
+ prinf("B=");
+ scanf("%d",&b);
+ while(b<a)
+ {
+  printf("B mora biti vece od A");
+  scanf("%d", &b);
+ }
+ printf("Parni brojevi izmedju A i B su: \n");
+ par=parni(a,b);
+ getch();
+
+}
+
+int parni(int x, int y)
+{
+ int i;
+ for(i=x+1;i<y;i++)
+ {
+  if(i%2==0)
+  printf("%d\n",i);
+
+ }
+}
