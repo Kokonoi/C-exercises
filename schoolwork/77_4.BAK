@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<string.h>
+main(void)
+{
+char ime[10],prezime[10],uspeh[20],nazivskole[40],uspeh[5];
+printf("Unesi ime.\n");
+gets(ime);
+printf("Unesi prezime.\n");
+gets(prezime);
+printf("Unesi mesto naziv skole.\n");
+gets(nazivskole);
+printf("Unesi uspeh ucenika.\n");

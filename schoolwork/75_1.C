@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+main()
+{
+ char ime[100], prezime[100], zajedno[200];
+
+ printf("\nUnesite ime: \n");
+ gets(ime);
+
+ printf("Unesite prezime: \n");
+ gets(prezime);
+
+ strcpy(zajedno, ime);
+ strcat(zajedno, " ");
+ strcat(zajedno, prezime);
+
+ printf("Ime i prezime: %s\n", zajedno);
+ getch();
+
+
+}

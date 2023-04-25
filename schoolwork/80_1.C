@@ -1,0 +1,71 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+main()
+{
+
+ struct PODACI
+  {
+   char zajedno[200];
+   char prezime[12];
+   char ime[12];
+   char nazivUl[32];
+   char brojUl[3];
+   char mesto[24];
+   int broj;
+  };
+
+ struct PODACI imenik;
+
+ printf("Unesi ime: \n");
+ gets(imenik.ime);
+ while(isupper(imenik.ime[0])!=1)
+  {
+   printf("Ime mora biti napisano velikim pocetnim slovom! \n");
+   gets(imenik.ime);
+  }
+
+ printf("Unesi prezime: \n");
+ gets(imenik.prezime);
+ while(isupper(imenik.prezime[0])!=1)
+  {
+   printf("Prezime mora biti napisano velikim pocetnim slovom! \n");
+   gets(imenik.prezime);
+  }
+
+ printf("Unesi naziv ulice: \n");
+ gets(imenik.nazivUl);
+
+ printf("Unesi broj ulice: \n");
+ scanf("%s", imenik.brojUl);
+
+ printf("Unesi mesto stanovanja: \n");
+ gets(imenik.mesto);
+ while(isupper(imenik.mesto[0])!=1)
+  {
+   printf("Grad mora biti napisan velikim pocetnim slovom! \n");
+   gets(imenik.mesto);
+  }
+
+ printf("Unesi broj telefona: \n");
+ scanf("%d", imenik.broj);
+
+ strcpy(imenik.zajedno, imenik.ime);
+ strcat(imenik.zajedno, " ");
+ strcat(imenik.zajedno, imenik.prezime);
+ strcat(imenik.zajedno, ", ");
+ strcat(imenik.zajedno, imenik.nazivUl);
+ strcat(imenik.zajedno, " ");
+ strcat(imenik.zajedno, imenik.brojUl);
+ strcat(imenik.zajedno, " ");
+ strcat(imenik.zajedno, imenik.mesto);
+
+ printf("%s, tel: %d", imenik.zajedno, imenik.broj);
+ getch();
+
+
+
+
+
+}

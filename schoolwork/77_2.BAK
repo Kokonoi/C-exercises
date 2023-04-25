@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <ctype.h>
+
+main()
+{
+
+ char tekst;
+ int broj;
+ printf("Napisi tekst: \n");
+
+ while ((tekst=getchar()) != EOF)
+  {
+   broj+=isupper(tekst)!=0;
+  }
+
+ printf("Broj velikih slova je: %d \n", broj);
+ getch();
+
+
+
+}

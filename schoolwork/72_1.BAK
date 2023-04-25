@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+
+{
+ char unetiString[20];
+ printf("Unesi string:");
+ scanf("%s", unetiString);
+ printf("Uneti string je: ");
+ puts(unetiString);
+ printf("%-5s", unetiString);
+ printf("%5s", unetiString);
+ getch();
+
+
+
+}
