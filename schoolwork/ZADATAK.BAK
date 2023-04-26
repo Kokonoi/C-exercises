@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+main()
+{
+ int a[5], b[5], i, s, n;
+
+ printf("Unesi elemente niza a.");
+ for(i=0;i<5;i++)
+ scanf("%d",&n);
+   printf("Unesi elemente niza b.\n");
+ for(i=0;i<n;i++)
+ scanf("%d",&n);
+
+ for(i=0;i<5;i++)
+ s=s+a[i]*b[i];
+
+ printf("Skalarni proizvod je %d \n",s);
+ getch();
+ }
+
+

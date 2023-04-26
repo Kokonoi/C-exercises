@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <graphics.h>
+
+main()
+{
+ int drv=DETECT,mod,r,x,y;
+ initgraph(&drv,&mod, "C:\\turboc3\\bgi");
+
+ printf("Unesi polulrecnik kruznice: \n");
+ scanf("%d", &r);
+
+ x=300;
+ y=300;
+
+ putpixel(x,y,RED);
+ setcolor(LIGHTGREEN);
+ setlinestyle(DASHED_LINE,1,1);
+ setcolor(RED);
+ circle(x,y,r);
+ setcolor(YELLOW);
+ line(x,y,x+r,y);
+ getch();
+ closegraph();
+}

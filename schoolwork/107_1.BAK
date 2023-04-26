@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<graphics.h>
+
+main()
+{
+ int drv=DETECT, mod, r, x, y;
+ initgraph(&drv,&mod,"C:\\turboc3\\bgi");
+
+ printf("Unesi poluprecnik smeska\n");
+ scanf("%d", &r);
+
+ setfillstyle(SOLID_FILL, YELLOW);
+ fillellipse(getmaxx()/2,getmaxy()/2,r,r);
+
+ setcolor(BLACK);
+ ellipse(getmaxx()/2,getmaxy()/2+(2*r/5),180,360,r/2,r/4);
+
+ setfillstyle(SOLID_FILL, WHITE);
+ setcolor(BLACK);
+ fillellipse(getmaxx()/2-(2*r/5),getmaxy()/2-(2*r/5),r/4,r/10);
+
+ setfillstyle(SOLID_FILL, WHITE);
+ setcolor(BLACK);
+ fillellipse(getmaxx()/2+(2*r/5),getmaxy()/2-(2*r/5),r/4,r/10);
+
+ setfillstyle(SOLID_FILL, BLACK);
+ setcolor(BLACK);
+ fillellipse(getmaxx()/2-(2*r/5),getmaxy()/2-(2*r/5),r/20,r/20);
+
+ ellipse(getmaxx()/2+(2*r/5),getmaxy()/2-(2*r/5),180,360,r/4,r/20);
+
+
+ getch();
+ closegraph();
+
+
+
+
+
+
+
+
+}
+

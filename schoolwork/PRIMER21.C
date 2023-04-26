@@ -1,0 +1,15 @@
+#include <stdio.h>
+main()
+{
+ int x;
+ printf("Unesi broj:\n");
+ scanf("%d", x);
+
+ if(x<0)
+ printf("broj je pozitivan\n");
+ else
+ printf("broj je negativan\n");
+
+ getch();
+
+}

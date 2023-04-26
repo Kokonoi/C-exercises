@@ -1,0 +1,39 @@
+#include <stdio.h>
+main()
+{
+ FILE *dat1, *dat2;
+ int i, broj;
+
+ dat1 = fopen("brojevi.txt", "w");
+ if(dat1==NULL)
+ {
+  printf("Greska pri otvaranju datoteke\n");
+  exit(1);
+ }
+ for (i=0; i<100; i++)
+  fprintf(dat1, "%d\n", i);
+ fclose(dat1);
+
+ dat1 = fopen("brojevi.txt", "r");
+ dat2 = fopen("deljivi.txt", "w");
+ if(dat2==NULL)
+ {
+  printf("Greska pri otvaranju datoteke\n");
+  exit(1);
+ }
+ while(!feof(dat1))
+ {
+  fscanf(dat1, "%d", broj);
+  if(broj % 3 == 0)
+   fprintf(dat2, "%d", broj);
+ }
+
+ fclose(dat1);
+ fclose(dat2);
+ getch();
+
+
+
+
+
+}

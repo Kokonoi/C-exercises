@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<stdlib.h>
+main()
+{
+ int i;
+ File *par;
+ par=fopen("parni","w");
+ if(pa==NULL)
+ {
+ printf("Nije otvorena datoteka parni.\n");
+ exit(1);
+}

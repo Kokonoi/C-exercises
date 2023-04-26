@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<graphics.h>
+
+void main()
+{
+ int drv=DETECT, mod, x,y,b;
+ initgraph(&drv,&mod,"C:\\turboc3\\bgi");
+
+ printf("Unesi parametar b \n");
+ scanf("%d", &b);
+
+ x=getmaxx()/2;
+ y=getmaxy()/2;
+
+ setcolor(GREEN);
+ ellipse(x+b, y, 90, 270, b, b);
+ ellipse(x, y+b, 0, 180, b, b);
+ ellipse(x-b, y, 270, 90, b, b);
+ ellipse(x, y-b, 180, 360, b, b);
+
+ setcolor(BROWN);
+ line(x,y,x,y+2*b);
+
+ getch();
+ closegraph();
+
+}
+
+

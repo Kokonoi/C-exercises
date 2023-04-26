@@ -1,0 +1,16 @@
+#include<stdio.h>
+#include<graphics.h>
+
+main()
+{
+ int drv=DETECT, mod;
+ initgraph(&drv,&mod,"C:\\turboc3\\bgi");
+
+ setfillstyle(SLASH_FILL, GREEN);
+ setcolor(YELLOW);
+ bar(350,50,450,350);
+
+ getch();
+ closegraph();
+
+}

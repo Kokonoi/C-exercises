@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<graphics.h>
+
+main()
+{
+ int drv=DETECT, mod, r;
+ initgraph(&drv,&mod,"C:\\turboc3\\bgi");
+
+ printf("Unesi poluprecnik kruznice\n");
+ scanf("%d", &r);
+
+ setfillstyle(SOLID_FILL, YELLOW);
+ setcolor(MAGENTA);
+ fillellipse(getmaxx()/2, getmaxy()/2 , 150, 60);
+ setfillstyle(SLASH_FILL, LIGHTGREEN);
+ setcolor(BLUE);
+ fillellipse(getmaxx()/2,getmaxy()/2, r,r);
+
+ getch();
+ closegraph();
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<graphics.h>
+
+main()
+{
+ int drv=DETECT, mod,a;
+ initgraph(&drv,&mod,"C:\\turboc3\\bgi");
+
+ printf("Uneti parametar A:\n");
+ scanf("%d", &a);
+
+ setfillstyle(SOLID_FILL, RED);
+ bar(getmaxx()/2-a/10,getmaxy()/2-2*a, getmaxx()/2+a/10 ,getmaxy()/2+a*2);
+ bar(getmaxx()/2-a*2,getmaxy()/2-a/10, getmaxx()/2+a*2 ,getmaxy()/2+a/10);
+
+
+ getch();
+ closegraph();
+
+}
